@@ -20,7 +20,7 @@ if select=='Text':
     if (st.button("Click to Analyze")):
         doc=nlp(text)
         ent_html=displacy.render(doc, style="ent", jupyter=False)
-        # Display the entity visualization in the browser:
+        # Display the entity visualization in the browse:
         st.markdown(ent_html, unsafe_allow_html=True)
 else:
     text=(st.text_area("ENTER URL"))
